@@ -6,7 +6,7 @@
 /*   By: okumurahyu <okumurahyu@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 14:50:51 by okumurahyu        #+#    #+#             */
-/*   Updated: 2022/04/07 22:57:02 by okumurahyu       ###   ########.fr       */
+/*   Updated: 2022/04/14 01:51:39 by okumurahyu       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ static void	free_cmd_list(t_cmd_list *nil)
 	t_cmd_list	*p;
 	t_cmd_list	*tmp;
 
+	if (nil == NULL)
+		return ;
 	p = nil->next;
 	while (p != nil)
 	{
