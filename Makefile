@@ -48,7 +48,7 @@ SRCS	= push_swap.c \
 HEADER	= include
 OBJS	= $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 CC		= gcc
-CFLAG	= #-Wall -Wextra -Werror
+CFLAG	= -Wall -Wextra -Werror
 SRC_DIR	:=	./srcs
 OBJ_DIR	:=	./objs
 VPATH	:=	srcs:\
@@ -65,7 +65,6 @@ VPATH	:=	srcs:\
 			srcs/validate
 
 all:		$(NAME)
-
 
 $(NAME):	$(OBJ_DIR) $(OBJS)
 	$(CC) $(OBJS) -o $(NAME)

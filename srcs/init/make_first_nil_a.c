@@ -6,7 +6,7 @@
 /*   By: okumurahyu <okumurahyu@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 13:02:27 by okumurahyu        #+#    #+#             */
-/*   Updated: 2022/04/14 01:35:03 by okumurahyu       ###   ########.fr       */
+/*   Updated: 2022/05/16 17:11:47 by okumurahyu       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int			same_value_exist(t_list *nil_a, int n);
 static int			add_new_node_to_nil_a(t_list *nil_a, long long n);
 static void			rank_nil_a(t_list *nil_a);
 
-int	make_first_nil_a(t_list *nil_a, t_list *nil_b, int argc, char **argv)
+int	make_first_nil_a(t_list *nil_a, int argc, char **argv)
 {
 	int			i;
 	long long	n;
@@ -32,7 +32,6 @@ int	make_first_nil_a(t_list *nil_a, t_list *nil_b, int argc, char **argv)
 		i++;
 	}
 	rank_nil_a(nil_a);
-	//check_sorted(nil_a, nil_b, NULL);
 	return (1);
 }
 

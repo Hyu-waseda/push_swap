@@ -6,7 +6,7 @@
 /*   By: okumurahyu <okumurahyu@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 12:07:17 by okumurahyu        #+#    #+#             */
-/*   Updated: 2022/04/10 00:03:18 by okumurahyu       ###   ########.fr       */
+/*   Updated: 2022/05/16 17:12:48 by okumurahyu       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	init_nil_ab(t_list **nil_a, t_list **nil_b, int argc, char **argv)
 	}
 	init_nil_a(*nil_a, argc);
 	init_nil_b(*nil_b, argc);
-	if (!make_first_nil_a(*nil_a, *nil_b, argc, argv))
+	if (!make_first_nil_a(*nil_a, argc, argv))
 	{
 		free_nils(*nil_a, *nil_b, NULL);
 		error();
